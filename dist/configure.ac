@@ -2,9 +2,9 @@
 # Process this file with autoconf to produce a configure script.
 
 PACKAGE=db
-AC_INIT(Berkeley DB, __EDIT_DB_VERSION__,
+AC_INIT(Berkeley DB, 6.0.30,
 	[Oracle Technology Network Berkeley DB forum],
-	db-__EDIT_DB_VERSION__)
+	db-6.0.30)
 AC_CONFIG_SRCDIR([../src/db/db.c])
 AC_CONFIG_HEADERS([db_config.h:config.hin])
 
@@ -96,23 +96,23 @@ AC_SUBST(platform_header)
 AC_SUBST(platform_footer)
 
 # Set the default installation location.
-AC_PREFIX_DEFAULT(/usr/local/BerkeleyDB.__EDIT_DB_VERSION_MAJOR__.__EDIT_DB_VERSION_MINOR__)
+AC_PREFIX_DEFAULT(/usr/local/BerkeleyDB.6.0)
 
 # Configure the version information.
 AC_SUBST(DB_VERSION_FAMILY)
-DB_VERSION_FAMILY="__EDIT_DB_VERSION_FAMILY__"
+DB_VERSION_FAMILY="12"
 AC_SUBST(DB_VERSION_RELEASE)
-DB_VERSION_RELEASE="__EDIT_DB_VERSION_RELEASE__"
+DB_VERSION_RELEASE="1"
 AC_SUBST(DB_VERSION_MAJOR)
-DB_VERSION_MAJOR="__EDIT_DB_VERSION_MAJOR__"
+DB_VERSION_MAJOR="6"
 AC_SUBST(DB_VERSION_MINOR)
-DB_VERSION_MINOR="__EDIT_DB_VERSION_MINOR__"
+DB_VERSION_MINOR="0"
 AC_SUBST(DB_VERSION_PATCH)
-DB_VERSION_PATCH="__EDIT_DB_VERSION_PATCH__"
+DB_VERSION_PATCH="30"
 AC_SUBST(DB_VERSION_STRING)
-DB_VERSION_STRING='"__EDIT_DB_VERSION_STRING__"'
+DB_VERSION_STRING='"Berkeley DB 6.0.30: (January 23, 2014)"'
 AC_SUBST(DB_VERSION_FULL_STRING)
-DB_VERSION_FULL_STRING='"__EDIT_DB_VERSION_FULL_STRING__"'
+DB_VERSION_FULL_STRING='"Berkeley DB 12c Release 1, library version 12.1.6.0.30: (January 23, 2014)"'
 AC_SUBST(DB_VERSION_UNIQUE_NAME)
 
 # Process all options before using them.
